@@ -10,9 +10,9 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav>
-      <h3>TechWave</h3>
-      <ul>
+    <nav class="flex justify-between items-center p-6 text-white bg-[#1a0c30]">
+      <h3 class="text-4xl font-bold">TechWave</h3>
+      <ul class="flex gap-8">
         <li><a href="#">About</a></li>
         <li><a href="#">Episodes</a></li>
         <li><a href="#">Hosts</a></li>
@@ -22,20 +22,36 @@
     </nav>
 
     <!-- Banner Section -->
-    <section>
-      <div>
-        <img src="banner-image.jpg" alt="TechWave Banner" />
-        <img src="banner-image.jpg" alt="TechWave Banner" />
+    <section
+      class="bg-[url(assets/hero-bg.png)] bg-no-repeat bg-cover text-white text-center p-20"
+    >
+      <div class="flex items-center justify-center">
+        <img src="assets/hero-circle.png" alt="TechWave Circle" />
+        <img
+          class="absolute"
+          src="assets/microphone.png"
+          alt="TechWave Microphone"
+        />
       </div>
-      <h2>TechWave</h2>
+      <h2 class="text-5xl font-bold my-8">TechWave</h2>
       <p>
         Your daily dose of tech insights, productivity hacks, and personal
         growth.
       </p>
 
-      <div>
-        <button>Listen On Spotify</button>
-        <button>Subscribe</button>
+      <div class="flex justify-center items-center gap-2 my-6">
+        <div
+          class="flex justify-center items-center gap-1 bg-transparent border-2 border-green-500 px-2.5 py-2 rounded-full"
+        >
+          <img src="assets/spotify.png" alt="" />
+          <button class="">Listen On Spotify</button>
+        </div>
+        <div
+          class="flex justify-center items-center gap-1.5 bg-transparent border-2 border-green-500 px-2.5 py-2 rounded-full"
+        >
+          <img src="assets/message.png" alt="" />
+          <button class="">Subscribe</button>
+        </div>
       </div>
     </section>
 
