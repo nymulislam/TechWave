@@ -11,30 +11,32 @@
   <body>
     <!-- Navigation Bar -->
     <nav class="flex justify-between items-center p-6 text-white bg-[#1a0c30]">
-      <h3 class="text-4xl font-bold">TechWave</h3>
-      <ul class="flex gap-8">
+      <h3 class="sm:text-4xl font-bold">TechWave</h3>
+      <ul class="sm:flex sm:gap-8 hidden">
         <li><a href="#">About</a></li>
         <li><a href="#">Episodes</a></li>
         <li><a href="#">Hosts</a></li>
       </ul>
 
-      <button>Subscribe</button>
+      <button class="hidden sm:block">Subscribe</button>
+      <img src="assets/hamburger-menu.png" alt="Hamburger Menu" class="sm:hidden" />
     </nav>
 
     <!-- Banner Section -->
     <section
-      class="bg-[url(assets/hero-bg.png)] bg-no-repeat bg-cover text-white text-center p-20"
+      class="bg-[url(assets/hero-bg.png)] bg-no-repeat bg-cover text-white text-center p-10 sm:p-20"
     >
-      <div class="flex items-center justify-center">
-        <img src="assets/hero-circle.png" alt="TechWave Circle" />
+      <div class="flex items-center justify-center relative">
+        <img class="w-1/2 sm:w-fit" src="assets/hero-circle.png" alt="TechWave Circle" />
         <img
-          class="absolute"
+          class="absolute w-1/6 sm:w-fit"
           src="assets/microphone.png"
           alt="TechWave Microphone"
         />
+        <button class=" rounded-full px-2 bg-green-500 text-black text-xl shadow-sm shadow-green-500 font-semibold absolute sm:top-5 sm:right-2/5">New</button>
       </div>
-      <h2 class="text-6xl font-extrabold my-2">TechWave</h2>
-      <p>
+      <h2 class="text-3xl sm:text-6xl font-bold sm:font-extrabold pt-6 ">TechWave</h2>
+      <p class="pt-4">
         Your daily dose of tech insights, productivity hacks, and personal
         growth.
       </p>
@@ -56,13 +58,13 @@
     </section>
 
     <!-- About Section -->
-    <section class="bg-[#1a0c30] text-white text-center p-10">
-      <h2 class="text-5xl font-semibold">About The Podcast</h2>
+    <section class="bg-[#1a0c30] text-white text-center p-2 sm:p-10">
+      <h2 class="text-4xl sm:text-5xl font-semibold">About The Podcast</h2>
       <p class="my-4">
         TechWave is your go-to podcast for staying ahead in the fast-paced world
         of technology.
       </p>
-      <p class="px-80">
+      <p class="px-5 sm:px-80">
         We break down complex topics into digestible insights, explore
         productivity strategies that actually work, and share stories of
         personal growth from industry leaders.
@@ -71,25 +73,25 @@
         Join thousands of young professionals and tech enthusiasts who start
         their day with TechWave.
       </p>
-      <hr class="text-white opacity-10 my-20 w-4/5 mx-auto" />
+      <hr class="text-white opacity-10 my-20 w-5/6 sm:w-4/5 mx-auto" />
 
-      <div class="flex items-center justify-evenly my-20">
+      <div class="flex items-center justify-center gap-10 flex-wrap sm:justify-evenly my-20">
         <div>
-          <h3 class="text-5xl font-extrabold text-green-500">150K+</h3>
+          <h3 class="text-4xl sm:text-5xl font-extrabold text-green-500">150K+</h3>
           <p class="opacity-75 my-3">MONTHLY LISTENERS</p>
         </div>
 
         <div>
-          <h3 class="text-5xl font-extrabold text-green-500">200+</h3>
+          <h3 class="text-4xl sm:text-5xl font-extrabold text-green-500">200+</h3>
           <p class="opacity-75 my-3">EPISODES PUBLISHED</p>
         </div>
 
         <div>
-          <h3 class="text-5xl font-extrabold text-green-500">4.9</h3>
+          <h3 class="text-4xl sm:text-5xl font-extrabold text-green-500">4.9</h3>
           <p class="opacity-75 my-3">AVERAGE RATING</p>
         </div>
         <div>
-          <h3 class="text-5xl font-extrabold text-green-500">50+</h3>
+          <h3 class="text-4xl sm:text-5xl font-extrabold text-green-500">50+</h3>
           <p class="opacity-75 my-3">INDUSTRY EXPERTIS</p>
         </div>
       </div>
@@ -98,10 +100,10 @@
     <!-- Why Choose TechWave -->
 
     <section class="bg-[#230e3d] text-white py-20">
-      <h3 class="text-center text-5xl font-bold">Why Choose TechWave</h3>
-      <div class="grid grid-cols-3 grid-rows-3 gap-4 py-8 w-7xl mx-auto">
+      <h3 class="text-center text-3xl sm:text-5xl font-bold">Why Choose TechWave</h3>
+      <div class="grid sm:grid-cols-3 sm:grid-rows-3 gap-4 py-8 sm:w-7xl mx-5 sm:mx-auto">
         <!-- Card 1 -->
-        <div class="col-span-1 row-span-2 rounded-3xl bg-[#2a0f4d] px-10 pt-32">
+        <div class=" sm:col-span-1 sm:row-span-2 rounded-3xl bg-[#2a0f4d] p-10 sm:px-10 sm:pt-32">
           <img src="assets/headphone.png" alt="headphone" />
           <h4 class="font-bold text-2xl my-4">Premium Audio Quality</h4>
           <p>
@@ -112,7 +114,7 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="col-span-2 row-span-1 bg-[#2a0f4d] rounded-3xl px-10 pt-14">
+        <div class=" sm:col-span-2 sm:row-span-1 bg-[#2a0f4d] rounded-3xl p-10 sm:px-10 sm:pt-14">
           <img src="assets/device.png" alt="device" />
           <h4 class="font-bold text-2xl my-4">Mobile Friendly</h4>
           <p>
@@ -122,7 +124,7 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="col-span-2 row-span-1 bg-[#2a0f4d] rounded-3xl px-10 pt-14">
+        <div class=" sm:col-span-2 sm:row-span-1 bg-[#2a0f4d] rounded-3xl p-10 sm:px-10 sm:pt-14">
           <img src="assets/location.png" alt="location" />
           <h4 class="font-bold text-2xl my-4">Global Community</h4>
           <p>
@@ -131,7 +133,7 @@
         </div>
 
         <!-- Card 4 -->
-        <div class="col-span-2 row-span-1 bg-[#2a0f4d] rounded-3xl p-10">
+        <div class=" sm:col-span-2 sm:row-span-1 bg-[#2a0f4d] rounded-3xl p-10">
           <img src="assets/interview.png" alt="interview" />
           <h4 class="font-bold text-2xl my-4">Exclusive Interviews</h4>
           <p>
@@ -143,7 +145,7 @@
         </div>
 
         <!-- Card 5 -->
-        <div class="col-span-1 row-span-1 bg-[#2a0f4d] rounded-3xl p-10">
+        <div class=" sm:col-span-1 sm:row-span-1 bg-[#2a0f4d] rounded-3xl p-10">
           <img src="assets/resource.png" alt="resource" />
           <h4 class="font-bold text-2xl my-4">Rich Resources</h4>
           <p>
@@ -155,12 +157,12 @@
     </section>
 
     <!-- Featured Episodes Section -->
-     <section class="bg-[#1a0b2e] text-white py-20">
-      <h1 class="text-5xl font-bold text-center">Featured Episodes</h1>
+     <section class="bg-[#1a0b2e] text-white pt-20">
+      <h1 class="text-4xl sm:text-5xl font-bold text-center">Featured Episodes</h1>
 
-      <div class="flex justify-center gap-10 my-20 px-20 w-7xl mx-auto">
+      <div class="flex flex-col sm:flex-row sm:justify-center gap-10 my-10 sm:my-20 sm:px-20 sm:w-7xl mx-5 sm:mx-auto">
         <!-- Episode Card 1 -->
-        <div class="bg-[#2a0f4d] rounded-4xl">
+        <div class="bg-[#2a0f4d]  rounded-4xl">
          <iframe class="w-full h-52 rounded-t-2xl" src="https://www.youtube.com/embed/MjSUJDumj5o?si=seOmkFaIfVUs6VkL&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           
          <div class="p-6">
@@ -217,12 +219,12 @@
       </div>
 
     <!-- Meet The Host -->
-    <section class="bg-[#1a0b2e] text-white p-20">
-      <h1 class="text-5xl font-bold text-center">Meet The Host</h1>
+    <section class="bg-[#1a0b2e] text-white my-16 p-5 sm:p-20">
+      <h1 class="text-3xl sm:text-5xl font-bold text-center">Meet The Host</h1>
 
-      <div class="bg-[#250d44] rounded-4xl flex items-center justify-center gap-10 mt-10 p-10 mx-40">
+      <div class="bg-[#250d44] rounded-4xl flex flex-col sm:flex-row items-center justify-center gap-10 mt-10 p-10 sm:mx-40">
         <img src="assets/host.png" alt="Host Image" />
-        <div>
+        <div class="text-center sm:text-left">
           <h2 class="text-2xl font-bold">Alex Kumar</h2>
           <p class="py-2 opacity-60">
             Tech entrepreneur, productivity expert, and lifelong learner. Alex
@@ -231,7 +233,7 @@
             insights from industry leaders and practical advice for anyone
             looking to grow in tech.
           </p>
-          <div class="flex items-center gap-4 mt-4">
+          <div class="flex items-center justify-center sm:justify-start gap-4 mt-4">
             <a class="border-2 rounded-full p-2 border-[#533C72]" href="http://">
               <img src="assets/linkedin.png" alt="LinkedIn" />
             </a>
@@ -251,11 +253,11 @@
 
     <!-- Footer Section -->
     <footer
-      class="bg-[url(assets/footer-bg.png)] bg-no-repeat bg-cover text-white text-center p-20"
+      class="bg-[url(assets/footer-bg.png)] bg-no-repeat bg-cover text-white text-center p-10 sm:p-20"
     >
-      <h2 class="text-4xl p-10">TechWave</h2>
+      <h2 class="text-2xl sm:text-4xl p-10">TechWave</h2>
 
-      <div class="flex justify-center gap-8 mb-8">
+      <div class="flex flex-wrap justify-center gap-8 mb-8">
         <a href="http://">
           <div class="flex items-center gap-1.5">
             <img src="assets/spotify.png" alt="" />
