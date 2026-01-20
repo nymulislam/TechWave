@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
 
     <title>TechWave</title>
@@ -11,29 +12,29 @@
   <body>
     <!-- Navigation Bar -->
     <nav class="flex justify-between items-center p-6 text-white bg-[#1a0c30]">
-      <h3 class="sm:text-4xl font-bold">TechWave</h3>
+      <img class="w-40 sm:w-52" src="assets/TechWave.png" alt="TechWave Logo" />
       <ul class="sm:flex sm:gap-8 hidden">
         <li><a href="#">About</a></li>
         <li><a href="#">Episodes</a></li>
         <li><a href="#">Hosts</a></li>
       </ul>
 
-      <button class="hidden sm:block">Subscribe</button>
+      <button class="hidden sm:block bg-linear-to-tr from-[#f7e93f] via-[#fb09b4] to-[#9100f8] text-white px-4 py-2 rounded-full">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
       <img src="assets/hamburger-menu.png" alt="Hamburger Menu" class="sm:hidden" />
     </nav>
 
     <!-- Banner Section -->
     <section
-      class="bg-[url(assets/hero-bg.png)] bg-no-repeat bg-cover text-white text-center p-10 sm:p-20"
+      class="bg-[url(assets/hero-sm.png)] sm:bg-[url(assets/hero-bg.png)] bg-no-repeat bg-cover bg-center min-h-dvh text-white text-center p-10 sm:p-20"
     >
       <div class="flex items-center justify-center relative">
-        <img class="w-1/2 sm:w-fit" src="assets/hero-circle.png" alt="TechWave Circle" />
+        <img class="w-2/4 sm:w-fit" src="assets/hero-circle.png" alt="TechWave Circle" />
         <img
-          class="absolute w-1/6 sm:w-fit"
+          class="absolute w-2/12 sm:w-fit"
           src="assets/microphone.png"
           alt="TechWave Microphone"
         />
-        <button class=" rounded-full px-2 bg-green-500 text-black text-xl shadow-sm shadow-green-500 font-semibold absolute sm:top-5 sm:right-2/5">New</button>
+        <button class=" rounded-full px-2 bg-green-500 text-black sm:text-xl shadow-sm shadow-green-500 font-semibold absolute top-2 sm:top-5 right-24 sm:right-2/5">New</button>
       </div>
       <h2 class="text-3xl sm:text-6xl font-bold sm:font-extrabold pt-6 ">TechWave</h2>
       <p class="pt-4">
@@ -43,10 +44,10 @@
 
       <div class="flex justify-center items-center gap-2 my-6">
         <div
-          class="flex justify-center items-center gap-1 bg-transparent border-2 border-green-500 px-2.5 py-2 rounded-full"
+          class="flex justify-center items-center gap-1 px-2.5 py-2 rounded-full bg-linear-to-tr from-[#f7e93f] via-[#fb09b4] to-[#9100f8] "
         >
           <img src="assets/spotify.png" alt="" />
-          <button class="">Listen On Spotify</button>
+          <button>Listen On Spotify</button>
         </div>
         <div
           class="flex justify-center items-center gap-1.5 bg-transparent border-2 border-green-500 px-2.5 py-2 rounded-full"
@@ -77,21 +78,25 @@
 
       <div class="flex items-center justify-center gap-10 flex-wrap sm:justify-evenly my-20">
         <div>
-          <h3 class="text-4xl sm:text-5xl font-extrabold text-green-500">150K+</h3>
+          <h3 class="text-4xl sm:text-5xl font-extrabold text-green-400">150K+</h3>
           <p class="opacity-75 my-3">MONTHLY LISTENERS</p>
         </div>
 
         <div>
-          <h3 class="text-4xl sm:text-5xl font-extrabold text-green-500">200+</h3>
+          <h3 class="text-4xl sm:text-5xl font-extrabold text-green-400">200+</h3>
           <p class="opacity-75 my-3">EPISODES PUBLISHED</p>
         </div>
 
         <div>
-          <h3 class="text-4xl sm:text-5xl font-extrabold text-green-500">4.9</h3>
+
+          <div class="flex items-center justify-center gap-1">
+            <h3 class="text-4xl sm:text-5xl font-extrabold text-green-400">4.9</h3>
+            <img class="pb-1" src="assets/star.png" alt="Star Rating">
+          </div>
           <p class="opacity-75 my-3">AVERAGE RATING</p>
         </div>
         <div>
-          <h3 class="text-4xl sm:text-5xl font-extrabold text-green-500">50+</h3>
+          <h3 class="text-4xl sm:text-5xl font-extrabold text-green-400">50+</h3>
           <p class="opacity-75 my-3">INDUSTRY EXPERTIS</p>
         </div>
       </div>
@@ -253,11 +258,11 @@
 
     <!-- Footer Section -->
     <footer
-      class="bg-[url(assets/footer-bg.png)] bg-no-repeat bg-cover text-white text-center p-10 sm:p-20"
+      class="bg-[url(assets/footer-sm.png)] sm:bg-[url(assets/footer-bg.png)] bg-no-repeat bg-bottom sm:bg-center bg-cover text-white text-center p-10 sm:p-20"
     >
-      <h2 class="text-2xl sm:text-4xl p-10">TechWave</h2>
+      <img src="assets/TechWave.png" alt="TechWave Logo" class="w-40 mx-auto " />
 
-      <div class="flex flex-wrap justify-center gap-8 mb-8">
+      <div class="flex flex-wrap justify-center gap-5 sm:gap-8 mt-10 sm:mt-20">
         <a href="http://">
           <div class="flex items-center gap-1.5">
             <img src="assets/spotify.png" alt="" />
@@ -285,7 +290,7 @@
         </a>
       </div>
 
-      <p class="opacity-60">© 2026 TechWave. All rights reserved.</p>
+      <p class="opacity-60 mt-8 text-sm">© 2026 TechWave. All rights reserved.</p>
     </footer>
   </body>
 </html>
